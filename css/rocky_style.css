@@ -82,17 +82,26 @@ p {
   margin-top: 20px;
   border: none;
   border-radius: 20px;
-  background-color: #515844;
+  background: #515844;
   color: #ffffff;
   font-size: 0.85em;
+  transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -webkit-transition: background 0.4s;
 }
 
 .gumdrop_button:hover {
   transform:scale(1.1);
-  background-color: #8A1913;
+  background: #8A1913;
+  transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -webkit-transition: background 0.4s;
 }
 
 .gumdrop_button:active {
   transform:scale(0.9);
-  background-color: #dc291e;
+  background: #dc291e;
+  transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -webkit-transition: background 0.4s;
 }
