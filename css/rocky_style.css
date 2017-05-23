@@ -9,13 +9,7 @@ p {
   margin: 0;
 }
 
-.color_box {
-  width: 250px;
-  height: 250px;
-  display: inline-block;
-  vertical-align: top;
-}
-
+/* Text boxes ============================================================== */
 .text_box {
   width: 700px;
   height: auto;
@@ -39,6 +33,25 @@ p {
 
 .text_box p {
   padding-top: 20px;
+}
+
+#text_box_01 {
+  background-color: #e5e8df;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.text_box_inner {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+/* Color boxes ============================================================== */
+.color_box {
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #color_box_01 {
@@ -65,17 +78,7 @@ p {
   color: #ffffff;
 }
 
-#text_box_01 {
-  background-color: #e5e8df;
-  padding-bottom: 20px;
-  width: 100%;
-}
-
-.text_box_inner {
-  padding-top: 20px;
-  padding-left: 20px;
-}
-
+/* Buttons ================================================================== */
 .gumdrop_button {
   width: 150px;
   height: 40px;
