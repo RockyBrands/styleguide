@@ -7,8 +7,6 @@ description: Required action items for our third party developers
 
 The following are required changes to the current template in order to comply with ADA AA requirements.
 
-test
-
 ## Global
 * Tab Navigable
   - Move navigation bypass "skip to content" as the first tab (before logo)
