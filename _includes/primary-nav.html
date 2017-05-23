@@ -217,9 +217,17 @@
 		<li class="c-primary-nav__item">
 
 			{% for my_page in site.pages %}
-				{% if my_page.url == "/contribute.html" %}
-				<a href="{{ "/contribute.html" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/ada.html' %}is-active is-current{% endif %}">
+				{% if my_page.url == "/ada.html" %}
+				<a href="{{ "/ada.html" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/ada.html' %}is-active is-current{% endif %}">
 					<span class="c-primary-nav__text">PFS Web requirements</span>
+				</a>
+				{% endif %}
+			{% endfor %}
+
+			{% for my_page in site.pages %}
+				{% if my_page.url == "/rocky_style.html" %}
+				<a href="{{ "/rocky_style.html" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/rocky_style.html' %}is-active is-current{% endif %}">
+					<span class="c-primary-nav__text">Rocky Boots</span>
 				</a>
 				{% endif %}
 			{% endfor %}
