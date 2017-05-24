@@ -4,6 +4,12 @@ layout: default
 
 {% include page-header.html %}
 
+	<div id="text_wrap" class="section_wrap">
+		<h2>Logo Usage</h2>
+		<img class="logo" alt="Wide Rocky logo" src="{{page.logo_01}}">
+		<img class="logo" alt="Rocky logo" src="{{page.logo_02}}">
+	</div>
+
 	<div id="color_wrap" class="section_wrap">
 		<h2>Color Usage</h2>
 		<div id="color_box_01" class="color_box"><p>#{{page.color_01}}<br>{{page.color_text_01}}</p></div>
@@ -13,22 +19,30 @@ layout: default
 		<div id="color_box_05" class="color_box"><p>#{{page.color_05}}<br>{{page.color_text_05}}</p></div>
 	</div>
 
-<div id="text_wrap" class="section_wrap">
-	<h2>Text Usage</h2>
-	<div class="text_box">
-		<h1>{{page.heading_01}}</h1>
-		<p>{{page.text_01}}</p>
-		<button class="gumdrop_button">button</button>
-	</div>
-	<div id="text_box_01">
-		<div class="text_box text_box_inner">
-			<h2>{{page.heading_02}}</h2>
-			<p>{{page.text_02}}</p>
+	<div id="text_wrap" class="section_wrap">
+		<h2>Text Usage</h2>
+		<div class="text_box">
+			<h1>{{page.heading_01}}</h1>
+			<p>{{page.text_01}}</p>
 			<button class="gumdrop_button">button</button>
 		</div>
+		<div id="text_box_01">
+			<div class="text_box text_box_inner">
+				<h2>{{page.heading_02}}</h2>
+				<p>{{page.text_02}}</p>
+				<button class="gumdrop_button">button</button>
+			</div>
+		</div>
 	</div>
-</div>
-<div id="image_wrap" class="section_wrap">
-	<h2>Image Usage</h2>
-	<p>Product images go on a white background only.</p>
-</div>
+	<div id="image_wrap" class="section_wrap">
+		<h2>Image Usage</h2>
+		<p>{{page.image_explanation}}</p>
+		<div class="image_example">
+			<img alt="Product image" src="{{page.product_image}}">
+			<p>{{page.image_text_01}}</p>
+		</div>
+		<div id="image_example_01" class="image_example">
+			<img alt="Product image" src="{{page.product_image}}">
+			<p>{{page.image_text_02}}</p>
+		</div>
+	</div>
