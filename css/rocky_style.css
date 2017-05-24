@@ -47,9 +47,13 @@ p {
 }
 
 #text_box_01 {
-  background-color: #e5e8df;
+  background-color: #f0f2ed;
   padding-bottom: 20px;
   width: 100%;
+}
+
+#text_box_01 h2 {
+  margin: 0;
 }
 
 .text_box_inner {
@@ -88,7 +92,7 @@ p {
 }
 
 #color_box_04 {
-  background-color: #e5e8df;
+  background-color: #f0f2ed;
 }
 
 #color_box_05 {
