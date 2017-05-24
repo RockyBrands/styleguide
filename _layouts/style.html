@@ -4,23 +4,31 @@ layout: default
 
 {% include page-header.html %}
 
+	<div id="color_wrap" class="section_wrap">
+		<h2>Color Usage</h2>
+		<div id="color_box_01" class="color_box"><p>#{{page.color_01}}<br>{{page.color_text_01}}</p></div>
+		<div id="color_box_02" class="color_box"><p>#{{page.color_02}}<br>{{page.color_text_02}}</p></div>
+		<div id="color_box_03" class="color_box"><p>#{{page.color_03}}<br>{{page.color_text_03}}</p></div>
+		<div id="color_box_04" class="color_box"><p>#{{page.color_04}}<br>{{page.color_text_04}}</p></div>
+		<div id="color_box_05" class="color_box"><p>#{{page.color_05}}<br>{{page.color_text_05}}</p></div>
+	</div>
 
-<div id="color_wrap">
-	<div id="color_box_01" class="color_box"><p>{{page.color_01}}<br>{{page.color_text_01}}</p></div>
-	<div id="color_box_02" class="color_box"><p>{{page.color_02}}<br>{{page.color_text_02}}</p></div>
-	<div id="color_box_03" class="color_box"><p>{{page.color_03}}<br>{{page.color_text_03}}</p></div>
-	<div id="color_box_04" class="color_box"><p>{{page.color_04}}<br>{{page.color_text_04}}</p></div>
-	<div id="color_box_05" class="color_box"><p>{{page.color_05}}<br>{{page.color_text_05}}</p></div>
-</div>
-<div class="text_box">
-	<h1>{{page.heading_01}}</h1>
-	<p>{{page.text_01}}</p>
-	<button class="gumdrop_button">button</button>
-</div>
-<div id="text_box_01">
-	<div class="text_box text_box_inner">
-		<h2>{{page.heading_02}}</h2>
-		<p>{{page.text_02}}</p>
+<div id="text_wrap" class="section_wrap">
+	<h2>Text Usage</h2>
+	<div class="text_box">
+		<h1>{{page.heading_01}}</h1>
+		<p>{{page.text_01}}</p>
 		<button class="gumdrop_button">button</button>
 	</div>
+	<div id="text_box_01">
+		<div class="text_box text_box_inner">
+			<h2>{{page.heading_02}}</h2>
+			<p>{{page.text_02}}</p>
+			<button class="gumdrop_button">button</button>
+		</div>
+	</div>
+</div>
+<div id="image_wrap" class="section_wrap">
+	<h2>Image Usage</h2>
+	<p>Product images go on a white background only.</p>
 </div>

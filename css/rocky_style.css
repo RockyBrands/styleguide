@@ -1,12 +1,24 @@
 html, body {
   font-family: 'Open Sans', sans-serif;
-  color: #161617;
+  color: #282828 !important;
   margin: 0;
   padding: 0;
 }
 
 p {
   margin: 0;
+}
+
+.section_wrap {
+  border-bottom: 1px solid #dc291e;
+  padding-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+.section_wrap h2 {
+  border-bottom: 1px solid #dc291e;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 /* Text boxes ============================================================== */
@@ -20,7 +32,6 @@ p {
 
 .text_box h1 {
   color: #8a1913;
-  margin-top: 50px;
   padding-bottom: 15px;
   border-bottom: 1px solid #515844;
 }
@@ -52,6 +63,13 @@ p {
   height: 250px;
   display: inline-block;
   vertical-align: top;
+  margin-bottom: 5px;
+}
+
+.color_box p {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #color_box_01 {
@@ -65,7 +83,7 @@ p {
 }
 
 #color_box_03 {
-  background-color: #161617;
+  background-color: #282828;
   color: #ffffff;
 }
 
@@ -104,7 +122,7 @@ p {
 .gumdrop_button:active {
   transform:scale(0.9);
   background: #dc291e;
-  transition: background 0.4s;
-  -moz-transition: background 0.4s;
-  -webkit-transition: background 0.4s;
+  transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -webkit-transition: background 0.2s;
 }
