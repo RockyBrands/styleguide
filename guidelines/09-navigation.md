@@ -8,4 +8,7 @@ description: Guidelines for getting around a UI
 
 ---
 
-Guidelines go here
+We should strive to be accessible by anyone, from any device, from anywhere.
+
+## Tab navigation
+Allow for someone to easily navigate your site with just a keyboard: specifically [tab] and [shift] + [tab] (reverse).
