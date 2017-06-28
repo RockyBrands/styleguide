@@ -13,6 +13,7 @@ The following are required changes to the current templates in order to comply w
   - Add a similar, visually hidden link to sitemap
   - Improve sitemap
   - Similar link before the filter sidebar
+  - After add to cart button, add a skip to cart
 * Wrap main content (`#primary`) with `<main role="main">` on every page in order to support skip to content links. Currently, any skip content goes to #main which doesn't exist on some pages. Category pages have <div id="main" role="main">: instances like this should be given the html5 "main" markup and all other rendering templates should wrap the content (slots) with the same.
 <!-- * [Remove title](http://a11yproject.com/posts/title-attributes/) -->
 * Add `role="navigation"` to `<nav>`
@@ -44,12 +45,27 @@ The following are required changes to the current templates in order to comply w
 * Add `role="tooltip"` to `.qtip-content` (image hover and "Add to cart" hover if no options selected). Advise if there is a more appropriate solution for screen readers.
   - Perhaps include the "Add to cart" tooltip as an inline error to make more apparent & accessible
 
-### Checkout Flow
+### Checkout Flow / Error Messaging
 * Ensure inline errors on forms. Many already do this and others highlight in red, but color impaired people need another indication (text).
+  - Suggested [solution similar to this](http://info.rockybrands.com/register-michelin.html) (append error to label)
+  - Disable submit button until required forms are filled out
+* Coupon code form should be all caps and enter should submit the code form
+* Search form: disable submit & add `required` attribute or custom error/tooltip
+  - Inside template (Georgia) throws `?q=SEARCH` when clicking the search icon; should behave same on all pages
+  - Inside template (Lehigh Outfitters, Durango) throws a PDP when clicking the search icon; should behave same on all pages
 * Add a format suggestion on phone input field &amp; [type="tel"](http://caniuse.com/#search=tel)
 * Email should be type="email"
 * Forms should have labels and/or aria-label
 * Order summary page skips print receipt on tab navigation, needs addressed
+* Remove country input; if required by internal processes, append that information to the appropriate data storage
+
+### Other Errors
+* If label is before input and user's tab throws the error, append visually-hidden to input so a screen reader would read it
+* Find a store near you
+  - First search button doesn't work or throw any errors if no store is in radius
+  - State form search doesn't throw error, just color red
+  - ZIP should be `type="number"`
+* [lower priority] Show password toggle on login/register pages
 
 ### Styling
 Part of the inspiration for creating this documentation is to create consistency and efficiency among those who work on the websites. There are five Front End Developers at Rocky Brands that need to better interact with the style sheets on each of the sites. I would like to explore a shared (perhaps with git), basic style sheet and subsequent sheets for each brand to which all parties have access. I'm not sure how / if this is possible, but I imagine having the ability to push a stylesheet to a bitbucket / github repository that would replicate to a dev instance (or staging) immediately and subsequently replicate to production over night.
