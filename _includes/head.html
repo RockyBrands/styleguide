@@ -9,7 +9,7 @@
 	<!-- Cody, this is what I had to add. -->
 	{% if page.custom_css %}
   	{% for stylesheet in page.custom_css %}
-  	<link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  	<link rel="stylesheet" href="styleguide/css/{{ stylesheet }}.css" media="screen" type="text/css">
   	{% endfor %}
 	{% endif %}
 	<link rel="stylesheet" href="{{ "/css" | prepend: site.baseurl }}/main.css">
